@@ -3,20 +3,19 @@
 ## Uso de Redis 
 
 redis:
+    image:
+      registry: docker.io
+      repository: viborx/tfg_redis
+      tag: 00.00.003
+    
     auth:
       password: "UNED"
       
     master:  
-      image:
-        name: viborx/tfg_redis
-        tag: 00.00.003
       ## Por defecto se deshabilitan los comandos FLUSHDB y FLUSHALL. 
       ## Vamos a necesitarlos para el módulo.
       disableCommands: []       
     replica:
-      image:
-        name: viborx/tfg_redis
-        tag: 00.00.003 
       ## @param replica.replicaCount Number of Redis&trade; replicas to deploy
       ##
       replicaCount: 1 

@@ -25,7 +25,7 @@ entries:
           name: traefik
     apiVersion: v2
     appVersion: 1.5.0
-    created: "2022-04-16T21:06:58.7882478+02:00"
+    created: "2022-04-16T21:26:59.1731526+02:00"
     description: Multi-user Jupyter installation
     digest: 507f71b7a9e88bd3d4f3f3b6dc1700e03c00ce1c9307106a1c58066b25255b89
     home: https://z2jh.jupyter.org
@@ -51,7 +51,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 6.2.6
-    created: "2022-04-16T21:06:58.7968866+02:00"
+    created: "2022-04-16T21:26:59.183224+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -79,4 +79,4 @@ entries:
     urls:
     - https://viborx.github.io/UNED-Charts/clave-valor/charts/redis-16.8.5.tgz
     version: 16.8.5
-generated: "2022-04-16T21:06:58.7856603+02:00"
+generated: "2022-04-16T21:26:59.1731526+02:00"
