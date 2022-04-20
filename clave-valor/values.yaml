@@ -6,7 +6,7 @@ redis:
     image:
       registry: docker.io
       repository: viborx/tfg_redis
-      tag: 00.00.005
+      tag: 00.00.006
     
     auth:
       password: "UNED"
