@@ -64,4 +64,13 @@ jupyterhub:
         password: UNED
       JupyterHub:
         authenticator_class: dummy
-
+  singleuser:
+    lifecycleHooks:
+      postStart:
+        exec:
+          command:
+            - "sh"
+            - "-c"
+            - >
+              cp -r /tmp/*.csv /home/jovyan;
+              cp -r /tmp/*.ipynb /home/jovyan
