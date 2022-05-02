@@ -59,7 +59,6 @@ jupyterhub:
       Authenticator:
         admin_users:
           - UNED  
-        allowed_users:
       # ...
       DummyAuthenticator:
         password: UNED
