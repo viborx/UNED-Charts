@@ -1,7 +1,6 @@
 
 ## Custom Chart  
 ## Uso de Redis 
-
 redis:
     image:
       registry: docker.io

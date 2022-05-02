@@ -25,7 +25,7 @@ entries:
           name: traefik
     apiVersion: v2
     appVersion: 1.5.0
-    created: "2022-05-02T14:48:53.4029714+02:00"
+    created: "2022-05-02T14:59:00.8683052+02:00"
     description: Multi-user Jupyter installation
     digest: 507f71b7a9e88bd3d4f3f3b6dc1700e03c00ce1c9307106a1c58066b25255b89
     home: https://z2jh.jupyter.org
@@ -44,14 +44,14 @@ entries:
     sources:
     - https://github.com/jupyterhub/zero-to-jupyterhub-k8s
     urls:
-    - https://viborx.github.io/UNED-Charts/clave-valor/charts/jupyterhub-1.2.0.tgz
+    - https://viborx.github.io/UNED-Charts/charts/jupyterhub-1.2.0.tgz
     version: 1.2.0
   redis:
   - annotations:
       category: Database
     apiVersion: v2
     appVersion: 6.2.6
-    created: "2022-05-02T14:48:53.4144244+02:00"
+    created: "2022-05-02T14:59:00.8777015+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -77,11 +77,11 @@ entries:
     sources:
     - https://github.com/bitnami/bitnami-docker-redis
     urls:
-    - https://viborx.github.io/UNED-Charts/clave-valor/charts/redis-16.8.5.tgz
+    - https://viborx.github.io/UNED-Charts/charts/redis-16.8.5.tgz
     version: 16.8.5
   uned-redis:
   - apiVersion: v2
-    created: "2022-05-02T14:48:53.3981771+02:00"
+    created: "2022-05-02T14:59:00.8565897+02:00"
     dependencies:
     - name: redis
       repository: https://charts.bitnami.com/bitnami
@@ -89,9 +89,9 @@ entries:
     - name: jupyterhub
       repository: https://jupyterhub.github.io/helm-chart/
       version: 1.2.0
-    digest: 040140392a6b4ac4bedbc448c9b9a26e37f6fdb620a5c4a623646ecad47bcd7c
+    digest: e34f536e96b70e38cc495c709fc5cacdb61a20bf304e10a092a9b965347d3597
     name: uned-redis
     urls:
-    - https://viborx.github.io/UNED-Charts/clave-valor/uned-redis-01.07.00.tgz
+    - https://viborx.github.io/UNED-Charts/uned-redis-01.07.00.tgz
     version: 01.07.00
-generated: "2022-05-02T14:48:53.3714098+02:00"
+generated: "2022-05-02T14:59:00.8434439+02:00"
