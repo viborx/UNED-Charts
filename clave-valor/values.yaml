@@ -64,7 +64,6 @@ jupyterhub:
         password: UNED
       JupyterHub:
         authenticator_class: dummy
-  singleuser:
     lifecycleHooks:
       postStart:
         exec:
