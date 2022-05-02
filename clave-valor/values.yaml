@@ -47,15 +47,24 @@ jupyterhub:
       # https://hub.docker.com/r/jupyter/datascience-notebook/tags/
       # Inspect the Dockerfile at:
       # https://github.com/jupyter/docker-stacks/tree/HEAD/datascience-notebook/Dockerfile
-      registry: docker.io
-      name: viborx/tfg_jupyter_redis
-      repository: viborx/tfg_jupyter_redis
-      tag: 00.00.001
+      #registry: docker.io
+      #name: viborx/tfg_jupyter_redis
+      #repository: viborx/tfg_jupyter_redis
+      #tag: 00.00.001
   scheduling:
       userScheduler:
         enabled: false
   cull:
     enabled: false     
+  lifecycleHooks:
+    postStart:
+      exec:
+        command:
+          - "sh"
+          - "-c"
+          - >
+            cp -r /tmp/*.csv /home/jovyan;
+            cp -r /tmp/*.ipynb /home/jovyan
   hub:
     config:
       Authenticator:
@@ -66,12 +75,3 @@ jupyterhub:
         password: UNED
       JupyterHub:
         authenticator_class: dummy
-    lifecycleHooks:
-      postStart:
-        exec:
-          command:
-            - "sh"
-            - "-c"
-            - >
-              cp -r /tmp/*.csv /home/jovyan;
-              cp -r /tmp/*.ipynb /home/jovyan
