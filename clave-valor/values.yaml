@@ -7,10 +7,8 @@ redis:
       registry: docker.io
       repository: viborx/tfg_redis
       tag: 00.00.007
-    
     auth:
       password: "UNED"
-      
     master:  
       ## Por defecto se deshabilitan los comandos FLUSHDB y FLUSHALL. 
       ## Vamos a necesitarlos para el módulo.
@@ -48,29 +46,27 @@ jupyterhub:
       # Inspect the Dockerfile at:
       # https://github.com/jupyter/docker-stacks/tree/HEAD/datascience-notebook/Dockerfile
       #registry: docker.io
-      #name: viborx/tfg_jupyter_redis
-      #repository: viborx/tfg_jupyter_redis
-      #tag: 00.00.001
+      name: viborx/tfg_jupyter_redis
+      tag: 00.00.001
+    lifecycleHooks:
+      postStart:
+        exec:
+          command:
+            - "sh"
+            - "-c"
+            - >
+              cp -r /tmp/*.csv /home/jovyan;
+              cp -r /tmp/*.ipynb /home/jovyan
   scheduling:
       userScheduler:
         enabled: false
   cull:
     enabled: false     
-  lifecycleHooks:
-    postStart:
-      exec:
-        command:
-          - "sh"
-          - "-c"
-          - >
-            cp -r /tmp/*.csv /home/jovyan;
-            cp -r /tmp/*.ipynb /home/jovyan
   hub:
     config:
       Authenticator:
         admin_users:
           - UNED  
-      # ...
       DummyAuthenticator:
         password: UNED
       JupyterHub:
