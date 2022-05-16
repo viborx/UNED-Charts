@@ -46,7 +46,7 @@ jupyterhub:
             - "sh"
             - "-c"
             - >
-              cp -r /tmp/*.csv /home/jovyan;
+              cp -r /tmp/*.json /home/jovyan;
               cp -r /tmp/*.ipynb /home/jovyan
   scheduling:
       userScheduler:
