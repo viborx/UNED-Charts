@@ -1,0 +1,92 @@
+apiVersion: v1
+entries:
+  jupyterhub:
+  - annotations:
+      artifacthub.io/images: |
+        - image: jupyterhub/configurable-http-proxy:4.5.0
+          name: configurable-http-proxy
+        - image: jupyterhub/k8s-hub:1.2.0
+          name: k8s-hub
+        - image: jupyterhub/k8s-image-awaiter:1.2.0
+          name: k8s-image-awaiter
+        - image: jupyterhub/k8s-network-tools:1.2.0
+          name: k8s-network-tools
+        - image: jupyterhub/k8s-secret-sync:1.2.0
+          name: k8s-secret-sync
+        - image: jupyterhub/k8s-singleuser-sample:1.2.0
+          name: k8s-singleuser-sample
+        - image: k8s.gcr.io/kube-scheduler:v1.19.13
+          name: kube-scheduler
+        - image: k8s.gcr.io/pause:3.5
+          name: pause
+        - image: k8s.gcr.io/pause:3.5
+          name: pause
+        - image: traefik:v2.4.11
+          name: traefik
+    apiVersion: v2
+    appVersion: 1.5.0
+    created: "2022-05-16T09:42:04.4379168+02:00"
+    description: Multi-user Jupyter installation
+    digest: 507f71b7a9e88bd3d4f3f3b6dc1700e03c00ce1c9307106a1c58066b25255b89
+    home: https://z2jh.jupyter.org
+    icon: https://jupyter.org/assets/hublogo.svg
+    keywords:
+    - jupyter
+    - jupyterhub
+    - z2jh
+    kubeVersion: '>=1.17.0-0'
+    maintainers:
+    - email: erik@sundellopensource.se
+      name: Erik Sundell
+    - name: Simon Li
+      url: https://github.com/manics/
+    name: jupyterhub
+    sources:
+    - https://github.com/jupyterhub/zero-to-jupyterhub-k8s
+    urls:
+    - https://viborx.github.io/UNED-Charts/documental/charts/jupyterhub-1.2.0.tgz
+    version: 1.2.0
+  mongodb:
+  - annotations:
+      category: Database
+    apiVersion: v2
+    appVersion: 4.4.13
+    created: "2022-05-16T09:42:04.4505158+02:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: MongoDB(R) is a relational open source NoSQL database. Easy to use,
+      it stores data in JSON-like documents. Automated scalability and high-performance.
+      Ideal for developing cloud native applications.
+    digest: ff694da2e64b36b9bdb8064ff1fd37f53478988e212359b507d8c5358f130939
+    home: https://github.com/bitnami/charts/tree/master/bitnami/mongodb
+    icon: https://bitnami.com/assets/stacks/mongodb/img/mongodb-stack-220x234.png
+    keywords:
+    - mongodb
+    - database
+    - nosql
+    - cluster
+    - replicaset
+    - replication
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    name: mongodb
+    sources:
+    - https://github.com/bitnami/bitnami-docker-mongodb
+    - https://mongodb.org
+    urls:
+    - https://viborx.github.io/UNED-Charts/documental/charts/mongodb-11.1.9.tgz
+    version: 11.1.9
+  uned-mongodb:
+  - apiVersion: v2
+    created: "2022-05-16T09:42:04.4293357+02:00"
+    digest: 32607aa44ce726f9d9fbba40a39267a735fa4a675fc2e8a37db6d65c2da9f557
+    name: uned-mongodb
+    urls:
+    - https://viborx.github.io/UNED-Charts/documental/uned-mongodb-01.00.00.tgz
+    version: 01.00.00
+generated: "2022-05-16T09:42:04.3657619+02:00"
