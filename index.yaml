@@ -2,30 +2,37 @@ apiVersion: v1
 entries:
   UNED-Charts:
   - apiVersion: v2
-    created: "2022-05-16T09:45:39.6669973+02:00"
-    digest: 52efb66c72a951f559aff1f46f540163f61f6cc5e1e1e58a5ba5b4fa2c13da29
+    created: "2022-05-22T22:14:29.8727537+02:00"
+    digest: 89109ec481ac019f3a6694a2ce195ebdb5ce8a32b7a11738dd7bdf3d3abc807a
     name: UNED-Charts
     urls:
-    - https://viborx.github.io/UNED-Charts/UNED-Charts-02.00.00.tgz
+    - https://viborx.github.io/UNED-Charts/.Name/UNED-Charts-02.00.00.tgz
     version: 02.00.00
   - apiVersion: v2
-    created: "2022-05-16T09:45:39.6552376+02:00"
+    created: "2022-05-22T22:14:29.8367567+02:00"
     digest: 038c60202386d7e118e297e858816587b1cfb6616a44fd510c32b53842b24947
     name: UNED-Charts
     urls:
-    - https://viborx.github.io/UNED-Charts/UNED-Charts-01.00.00.tgz
+    - https://viborx.github.io/UNED-Charts/.Name/UNED-Charts-01.00.00.tgz
     version: 01.00.00
   uned-mongodb:
   - apiVersion: v2
-    created: "2022-05-16T09:45:39.6827662+02:00"
-    digest: 32607aa44ce726f9d9fbba40a39267a735fa4a675fc2e8a37db6d65c2da9f557
+    created: "2022-05-22T22:14:29.9035468+02:00"
+    dependencies:
+    - name: mongodb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.1.9
+    - name: jupyterhub
+      repository: https://jupyterhub.github.io/helm-chart/
+      version: 1.2.0
+    digest: 723de65cf34c5fc5248d094ae84314f45f74f0556e7cfe8b7710e525133d208c
     name: uned-mongodb
     urls:
-    - https://viborx.github.io/UNED-Charts/documental/uned-mongodb-01.00.00.tgz
+    - https://viborx.github.io/UNED-Charts/.Name/documental/uned-mongodb-01.00.00.tgz
     version: 01.00.00
   uned-redis:
   - apiVersion: v2
-    created: "2022-05-16T09:45:39.6726961+02:00"
+    created: "2022-05-22T22:14:29.8905485+02:00"
     dependencies:
     - name: redis
       repository: https://charts.bitnami.com/bitnami
@@ -33,9 +40,9 @@ entries:
     - name: jupyterhub
       repository: https://jupyterhub.github.io/helm-chart/
       version: 1.2.0
-    digest: e34f536e96b70e38cc495c709fc5cacdb61a20bf304e10a092a9b965347d3597
+    digest: efab68ef78b25dc74d9457239a1f77ea9e5b38d1250d26bae725d553cd61f84f
     name: uned-redis
     urls:
-    - https://viborx.github.io/UNED-Charts/clave-valor/uned-redis-01.07.00.tgz
-    version: 01.07.00
-generated: "2022-05-16T09:45:39.6488214+02:00"
+    - https://viborx.github.io/UNED-Charts/.Name/clave-valor/uned-redis-02.00.00.tgz
+    version: 02.00.00
+generated: "2022-05-22T22:14:29.8307598+02:00"

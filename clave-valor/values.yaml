@@ -5,7 +5,7 @@ redis:
     image:
       registry: docker.io
       repository: viborx/tfg_redis
-      tag: 00.00.007
+      tag: 01.00.000
     auth:
       password: "UNED"
     master:  
@@ -37,6 +37,7 @@ redis:
             ## @param replica.autoscaling.targetMemory Percentage of Memory to consider when autoscaling
             ##
             targetMemory: ""
+
 jupyterhub:
   singleuser:
     image:
@@ -46,7 +47,7 @@ jupyterhub:
       # https://github.com/jupyter/docker-stacks/tree/HEAD/datascience-notebook/Dockerfile
       #registry: docker.io
       name: viborx/tfg_jupyter_redis
-      tag: 00.00.001
+      tag: 01.00.000
     lifecycleHooks:
       postStart:
         exec:
@@ -56,6 +57,11 @@ jupyterhub:
             - >
               cp -r /tmp/*.csv /home/jovyan;
               cp -r /tmp/*.ipynb /home/jovyan
+    storage:
+      static:
+        pvcName: claim-redis
+      dynamic:
+        pvcNameTemplate: claim-redis
   scheduling:
       userScheduler:
         enabled: false

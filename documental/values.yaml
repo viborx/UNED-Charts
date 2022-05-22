@@ -28,9 +28,9 @@ mongodb:
        - '32002'
        - '32003'
   fullnameOverride: mongodb
-  extraEnvVars:
-    - name: ALLOW_EMPTY_PASSWORD
-      value: "yes"
+  #extraEnvVars:
+  #  - name: ALLOW_EMPTY_PASSWORD
+  #    value: "yes"
   arbiter:
     enabled: false
 
@@ -48,6 +48,11 @@ jupyterhub:
             - >
               cp -r /tmp/*.json /home/jovyan;
               cp -r /tmp/*.ipynb /home/jovyan
+    storage:
+      static:
+        pvcName: claim-mongodb
+      dynamic:
+        pvcNameTemplate: claim-mongodb
   scheduling:
       userScheduler:
         enabled: false
