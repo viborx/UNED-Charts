@@ -1,0 +1,9 @@
+dependencies:
+- name: mongodb
+  repository: https://charts.bitnami.com/bitnami
+  version: 11.1.9
+- name: jupyterhub
+  repository: https://jupyterhub.github.io/helm-chart/
+  version: 1.2.0
+digest: sha256:194bc6aad422dd24b29297ee1b881eab66f1f8bbbc67121f5a5827235b7ff2b2
+generated: "2022-05-04T01:40:55.4936849+02:00"
