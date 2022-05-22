@@ -25,7 +25,7 @@ entries:
           name: traefik
     apiVersion: v2
     appVersion: 1.5.0
-    created: "2022-05-22T22:14:29.0287561+02:00"
+    created: "2022-05-23T00:03:26.4009958+02:00"
     description: Multi-user Jupyter installation
     digest: 507f71b7a9e88bd3d4f3f3b6dc1700e03c00ce1c9307106a1c58066b25255b89
     home: https://z2jh.jupyter.org
@@ -44,14 +44,14 @@ entries:
     sources:
     - https://github.com/jupyterhub/zero-to-jupyterhub-k8s
     urls:
-    - https://viborx.github.io/UNED-Charts/documental.Name/charts/jupyterhub-1.2.0.tgz
+    - https://viborx.github.io/UNED-Charts/documental/charts/jupyterhub-1.2.0.tgz
     version: 1.2.0
   mongodb:
   - annotations:
       category: Database
     apiVersion: v2
     appVersion: 4.4.13
-    created: "2022-05-22T22:14:29.0343782+02:00"
+    created: "2022-05-23T00:03:26.4111043+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -79,11 +79,11 @@ entries:
     - https://github.com/bitnami/bitnami-docker-mongodb
     - https://mongodb.org
     urls:
-    - https://viborx.github.io/UNED-Charts/documental.Name/charts/mongodb-11.1.9.tgz
+    - https://viborx.github.io/UNED-Charts/documental/charts/mongodb-11.1.9.tgz
     version: 11.1.9
   uned-mongodb:
   - apiVersion: v2
-    created: "2022-05-22T22:14:29.0256985+02:00"
+    created: "2022-05-23T00:03:26.4009958+02:00"
     dependencies:
     - name: mongodb
       repository: https://charts.bitnami.com/bitnami
@@ -91,9 +91,9 @@ entries:
     - name: jupyterhub
       repository: https://jupyterhub.github.io/helm-chart/
       version: 1.2.0
-    digest: 723de65cf34c5fc5248d094ae84314f45f74f0556e7cfe8b7710e525133d208c
+    digest: 27d4b59e8f86a12a797086fe1cdde7bb365c74a7e02333bad65c8777372359da
     name: uned-mongodb
     urls:
-    - https://viborx.github.io/UNED-Charts/documental.Name/uned-mongodb-01.00.00.tgz
+    - https://viborx.github.io/UNED-Charts/documental/uned-mongodb-01.00.00.tgz
     version: 01.00.00
-generated: "2022-05-22T22:14:29.0127826+02:00"
+generated: "2022-05-23T00:03:26.3908982+02:00"

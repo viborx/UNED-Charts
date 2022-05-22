@@ -25,7 +25,7 @@ entries:
           name: traefik
     apiVersion: v2
     appVersion: 1.5.0
-    created: "2022-05-22T22:13:43.4102856+02:00"
+    created: "2022-05-23T00:03:06.5940076+02:00"
     description: Multi-user Jupyter installation
     digest: 507f71b7a9e88bd3d4f3f3b6dc1700e03c00ce1c9307106a1c58066b25255b89
     home: https://z2jh.jupyter.org
@@ -44,14 +44,14 @@ entries:
     sources:
     - https://github.com/jupyterhub/zero-to-jupyterhub-k8s
     urls:
-    - https://viborx.github.io/UNED-Charts/clave-valor.Name/charts/jupyterhub-1.2.0.tgz
+    - https://viborx.github.io/UNED-Charts/clave-valor/charts/jupyterhub-1.2.0.tgz
     version: 1.2.0
   redis:
   - annotations:
       category: Database
     apiVersion: v2
     appVersion: 6.2.6
-    created: "2022-05-22T22:13:43.4187449+02:00"
+    created: "2022-05-23T00:03:06.5940076+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -77,11 +77,11 @@ entries:
     sources:
     - https://github.com/bitnami/bitnami-docker-redis
     urls:
-    - https://viborx.github.io/UNED-Charts/clave-valor.Name/charts/redis-16.8.5.tgz
+    - https://viborx.github.io/UNED-Charts/clave-valor/charts/redis-16.8.5.tgz
     version: 16.8.5
   uned-redis:
   - apiVersion: v2
-    created: "2022-05-22T22:13:43.4060086+02:00"
+    created: "2022-05-23T00:03:06.5903894+02:00"
     dependencies:
     - name: redis
       repository: https://charts.bitnami.com/bitnami
@@ -89,9 +89,9 @@ entries:
     - name: jupyterhub
       repository: https://jupyterhub.github.io/helm-chart/
       version: 1.2.0
-    digest: efab68ef78b25dc74d9457239a1f77ea9e5b38d1250d26bae725d553cd61f84f
+    digest: fc1b7aa4fe05f08b3a2fc4e5577396599f9e7621406c8079a244d6205d1736c6
     name: uned-redis
     urls:
-    - https://viborx.github.io/UNED-Charts/clave-valor.Name/uned-redis-02.00.00.tgz
+    - https://viborx.github.io/UNED-Charts/clave-valor/uned-redis-02.00.00.tgz
     version: 02.00.00
-generated: "2022-05-22T22:13:43.3905713+02:00"
+generated: "2022-05-23T00:03:06.5716942+02:00"
