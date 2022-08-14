@@ -1,0 +1,46 @@
+
+## Custom Chart  
+## Uso de Redis 
+redis-cluster:
+  global:
+    redis:
+      password: "UNED"
+
+jupyterhub:
+  singleuser:
+    image:
+      # You should replace the "latest" tag with a fixed version from:
+      # https://hub.docker.com/r/jupyter/datascience-notebook/tags/
+      # Inspect the Dockerfile at:
+      # https://github.com/jupyter/docker-stacks/tree/HEAD/datascience-notebook/Dockerfile
+      #registry: docker.io
+      name: viborx/tfg_jupyter_redis
+      tag: 01.00.000
+    lifecycleHooks:
+      postStart:
+        exec:
+          command:
+            - "sh"
+            - "-c"
+            - >
+              cp -r /tmp/*.csv /home/jovyan;
+              cp -r /tmp/*.ipynb /home/jovyan
+    storage:
+      static:
+        pvcName: claim-redis-cluster
+      dynamic:
+        pvcNameTemplate: claim-redis-cluster
+  scheduling:
+      userScheduler:
+        enabled: false
+  cull:
+    enabled: false     
+  hub:
+    config:
+      Authenticator:
+        admin_users:
+          - UNED  
+      DummyAuthenticator:
+        password: UNED
+      JupyterHub:
+        authenticator_class: dummy

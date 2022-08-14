@@ -1,0 +1,9 @@
+dependencies:
+- name: redis-cluster
+  repository: https://charts.bitnami.com/bitnami
+  version: 8.1.1
+- name: jupyterhub
+  repository: https://jupyterhub.github.io/helm-chart/
+  version: 1.2.0
+digest: sha256:4ee7dcc7937857ba5374d9a8480ce899f0a723909a80b1b98012f5b02fbdc917
+generated: "2022-07-26T00:17:23.7838329+02:00"

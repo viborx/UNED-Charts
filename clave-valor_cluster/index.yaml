@@ -1,0 +1,96 @@
+apiVersion: v1
+entries:
+  jupyterhub:
+  - annotations:
+      artifacthub.io/images: |
+        - image: jupyterhub/configurable-http-proxy:4.5.0
+          name: configurable-http-proxy
+        - image: jupyterhub/k8s-hub:1.2.0
+          name: k8s-hub
+        - image: jupyterhub/k8s-image-awaiter:1.2.0
+          name: k8s-image-awaiter
+        - image: jupyterhub/k8s-network-tools:1.2.0
+          name: k8s-network-tools
+        - image: jupyterhub/k8s-secret-sync:1.2.0
+          name: k8s-secret-sync
+        - image: jupyterhub/k8s-singleuser-sample:1.2.0
+          name: k8s-singleuser-sample
+        - image: k8s.gcr.io/kube-scheduler:v1.19.13
+          name: kube-scheduler
+        - image: k8s.gcr.io/pause:3.5
+          name: pause
+        - image: k8s.gcr.io/pause:3.5
+          name: pause
+        - image: traefik:v2.4.11
+          name: traefik
+    apiVersion: v2
+    appVersion: 1.5.0
+    created: "2022-08-14T18:00:44.6744678+02:00"
+    description: Multi-user Jupyter installation
+    digest: 507f71b7a9e88bd3d4f3f3b6dc1700e03c00ce1c9307106a1c58066b25255b89
+    home: https://z2jh.jupyter.org
+    icon: https://jupyter.org/assets/hublogo.svg
+    keywords:
+    - jupyter
+    - jupyterhub
+    - z2jh
+    kubeVersion: '>=1.17.0-0'
+    maintainers:
+    - email: erik@sundellopensource.se
+      name: Erik Sundell
+    - name: Simon Li
+      url: https://github.com/manics/
+    name: jupyterhub
+    sources:
+    - https://github.com/jupyterhub/zero-to-jupyterhub-k8s
+    urls:
+    - https://viborx.github.io/UNED-Charts/clave-valor/charts/jupyterhub-1.2.0.tgz
+    version: 1.2.0
+  redis-cluster:
+  - annotations:
+      category: Database
+    apiVersion: v2
+    appVersion: 7.0.4
+    created: "2022-08-14T18:00:44.6853277+02:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: Redis(R) is an open source, scalable, distributed in-memory cache
+      for applications. It can be used to store and serve data in the form of strings,
+      hashes, lists, sets and sorted sets.
+    digest: 718dcac16bcc8f946fa7461bc115241aa5f7879f057ddaf5b0b62318556dd355
+    home: https://github.com/bitnami/charts/tree/master/bitnami/redis-cluster
+    icon: https://bitnami.com/assets/stacks/redis/img/redis-stack-220x234.png
+    keywords:
+    - redis
+    - keyvalue
+    - database
+    maintainers:
+    - name: Bitnami
+      url: https://github.com/bitnami/charts
+    name: redis-cluster
+    sources:
+    - https://github.com/bitnami/bitnami-docker-redis
+    - http://redis.io/
+    urls:
+    - https://viborx.github.io/UNED-Charts/clave-valor/charts/redis-cluster-8.1.1.tgz
+    version: 8.1.1
+  uned-redis-cluster:
+  - apiVersion: v2
+    created: "2022-08-14T18:00:44.6673001+02:00"
+    dependencies:
+    - name: redis-cluster
+      repository: https://charts.bitnami.com/bitnami
+      version: 8.1.1
+    - name: jupyterhub
+      repository: https://jupyterhub.github.io/helm-chart/
+      version: 1.2.0
+    digest: 4958fae6c25d7fe7b6971eb8f5cf9ea62f797fe377ff6c52b8bf820cd9e4f8f5
+    name: uned-redis-cluster
+    urls:
+    - https://viborx.github.io/UNED-Charts/clave-valor/uned-redis-cluster-01.00.00.tgz
+    version: 01.00.00
+generated: "2022-08-14T18:00:44.6489648+02:00"
