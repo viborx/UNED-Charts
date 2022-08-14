@@ -27,9 +27,9 @@ jupyterhub:
               cp -r /tmp/*.ipynb /home/jovyan
     storage:
       static:
-        pvcName: claim-redis-cluster
+        pvcName: claim-redis
       dynamic:
-        pvcNameTemplate: claim-redis-cluster
+        pvcNameTemplate: claim-redis
   scheduling:
       userScheduler:
         enabled: false
