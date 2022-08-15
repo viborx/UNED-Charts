@@ -25,7 +25,7 @@ entries:
           name: traefik
     apiVersion: v2
     appVersion: 1.5.0
-    created: "2022-05-23T00:03:26.4009958+02:00"
+    created: "2022-08-15T12:34:36.8609365+02:00"
     description: Multi-user Jupyter installation
     digest: 507f71b7a9e88bd3d4f3f3b6dc1700e03c00ce1c9307106a1c58066b25255b89
     home: https://z2jh.jupyter.org
@@ -51,7 +51,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 4.4.13
-    created: "2022-05-23T00:03:26.4111043+02:00"
+    created: "2022-08-15T12:34:36.8609365+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -83,7 +83,7 @@ entries:
     version: 11.1.9
   uned-mongodb:
   - apiVersion: v2
-    created: "2022-05-23T00:03:26.4009958+02:00"
+    created: "2022-08-15T12:34:36.8508357+02:00"
     dependencies:
     - name: mongodb
       repository: https://charts.bitnami.com/bitnami
@@ -91,9 +91,9 @@ entries:
     - name: jupyterhub
       repository: https://jupyterhub.github.io/helm-chart/
       version: 1.2.0
-    digest: 27d4b59e8f86a12a797086fe1cdde7bb365c74a7e02333bad65c8777372359da
+    digest: d1da4eb2622695b122260d9cc0b1a9be74893c093fdf9f1de6b04e46470b8a32
     name: uned-mongodb
     urls:
     - https://viborx.github.io/UNED-Charts/documental/uned-mongodb-01.00.00.tgz
     version: 01.00.00
-generated: "2022-05-23T00:03:26.3908982+02:00"
+generated: "2022-08-15T12:34:36.8402967+02:00"
