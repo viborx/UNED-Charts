@@ -25,7 +25,7 @@ entries:
           name: traefik
     apiVersion: v2
     appVersion: 1.5.0
-    created: "2022-08-14T18:00:44.6744678+02:00"
+    created: "2022-08-15T11:51:29.7241749+02:00"
     description: Multi-user Jupyter installation
     digest: 507f71b7a9e88bd3d4f3f3b6dc1700e03c00ce1c9307106a1c58066b25255b89
     home: https://z2jh.jupyter.org
@@ -44,14 +44,14 @@ entries:
     sources:
     - https://github.com/jupyterhub/zero-to-jupyterhub-k8s
     urls:
-    - https://viborx.github.io/UNED-Charts/clave-valor/charts/jupyterhub-1.2.0.tgz
+    - https://viborx.github.io/UNED-Charts/clave-valor_cluster/charts/jupyterhub-1.2.0.tgz
     version: 1.2.0
   redis-cluster:
   - annotations:
       category: Database
     apiVersion: v2
     appVersion: 7.0.4
-    created: "2022-08-14T18:00:44.6853277+02:00"
+    created: "2022-08-15T11:51:29.7343112+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -76,11 +76,11 @@ entries:
     - https://github.com/bitnami/bitnami-docker-redis
     - http://redis.io/
     urls:
-    - https://viborx.github.io/UNED-Charts/clave-valor/charts/redis-cluster-8.1.1.tgz
+    - https://viborx.github.io/UNED-Charts/clave-valor_cluster/charts/redis-cluster-8.1.1.tgz
     version: 8.1.1
   uned-redis-cluster:
   - apiVersion: v2
-    created: "2022-08-14T18:00:44.6673001+02:00"
+    created: "2022-08-15T11:51:29.7241749+02:00"
     dependencies:
     - name: redis-cluster
       repository: https://charts.bitnami.com/bitnami
@@ -88,9 +88,9 @@ entries:
     - name: jupyterhub
       repository: https://jupyterhub.github.io/helm-chart/
       version: 1.2.0
-    digest: 4958fae6c25d7fe7b6971eb8f5cf9ea62f797fe377ff6c52b8bf820cd9e4f8f5
+    digest: 4bbc22def01c26d61182f55423557fd215e6c21a65011a3fbfb54da9b4d23595
     name: uned-redis-cluster
     urls:
-    - https://viborx.github.io/UNED-Charts/clave-valor/uned-redis-cluster-01.00.00.tgz
+    - https://viborx.github.io/UNED-Charts/clave-valor_cluster/uned-redis-cluster-01.00.00.tgz
     version: 01.00.00
-generated: "2022-08-14T18:00:44.6489648+02:00"
+generated: "2022-08-15T11:51:29.714109+02:00"
