@@ -25,7 +25,7 @@ entries:
           name: traefik
     apiVersion: v2
     appVersion: 1.5.0
-    created: "2022-08-15T12:34:30.4220414+02:00"
+    created: "2022-08-15T13:21:33.2739678+02:00"
     description: Multi-user Jupyter installation
     digest: 507f71b7a9e88bd3d4f3f3b6dc1700e03c00ce1c9307106a1c58066b25255b89
     home: https://z2jh.jupyter.org
@@ -51,7 +51,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 7.0.4
-    created: "2022-08-15T12:34:30.429059+02:00"
+    created: "2022-08-15T13:21:33.2810983+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -80,7 +80,7 @@ entries:
     version: 8.1.1
   uned-redis-cluster:
   - apiVersion: v2
-    created: "2022-08-15T12:34:30.4175874+02:00"
+    created: "2022-08-15T13:21:33.2690603+02:00"
     dependencies:
     - name: redis-cluster
       repository: https://charts.bitnami.com/bitnami
@@ -88,9 +88,9 @@ entries:
     - name: jupyterhub
       repository: https://jupyterhub.github.io/helm-chart/
       version: 1.2.0
-    digest: 4317544da1059dc0cc2f2c7794bb79ba5225061182e57c433b0d559512574de7
+    digest: 29fffac6a9df4b715e2ed4d892ba59dd374feecaa469614dd7328afcc00767e9
     name: uned-redis-cluster
     urls:
     - https://viborx.github.io/UNED-Charts/clave-valor_cluster/uned-redis-cluster-01.00.00.tgz
     version: 01.00.00
-generated: "2022-08-15T12:34:30.4047129+02:00"
+generated: "2022-08-15T13:21:33.2150182+02:00"

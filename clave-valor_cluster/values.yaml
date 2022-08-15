@@ -24,6 +24,7 @@ jupyterhub:
             - "-c"
             - >
               cp -r /tmp/*.csv /home/jovyan;
+              cp -r /tmp/*.txt /home/jovyan;
               cp -r /tmp/*.ipynb /home/jovyan
     storage:
       static:
