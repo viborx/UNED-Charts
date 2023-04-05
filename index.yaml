@@ -2,15 +2,22 @@ apiVersion: v1
 entries:
   UNED-Charts:
   - apiVersion: v2
-    created: "2022-08-15T13:21:39.9760524+02:00"
-    digest: 5306c6776627bbfe49f43d41294d9ebe9d4328982dd2583e05560af98629a653
+    created: "2023-04-05T23:25:51.7009828+02:00"
+    digest: 61522b6fe895391c7113860a1f176b7d6ff830502beb7d69eba41afa63b6188a
     name: UNED-Charts
     urls:
     - https://viborx.github.io/UNED-Charts/UNED-Charts-01.00.00.tgz
     version: 01.00.00
   uned-mongodb:
   - apiVersion: v2
-    created: "2022-08-15T13:21:40.0145794+02:00"
+    created: "2023-04-05T23:25:51.7478135+02:00"
+    digest: f5f797be872a6ea10ef8d08ed5b1eafd6ebbf92930c52f44ff72b6e542d149c6
+    name: uned-mongodb
+    urls:
+    - https://viborx.github.io/UNED-Charts/documental/uned-mongodb-01.00.00.tgz
+    version: 01.00.00
+  - apiVersion: v2
+    created: "2023-04-05T23:25:51.7630362+02:00"
     dependencies:
     - name: mongodb
       repository: https://charts.bitnami.com/bitnami
@@ -18,14 +25,14 @@ entries:
     - name: jupyterhub
       repository: https://jupyterhub.github.io/helm-chart/
       version: 1.2.0
-    digest: a6e9cfb75a82eba54fc7a3dfea7b5124c5ab679b0bae8ed7e40bf769d179d6e7
+    digest: 6bbcd8498d31b983b4125bd0748ee6d08e8c1f271bdbcd5c4edab07ac85134a0
     name: uned-mongodb
     urls:
-    - https://viborx.github.io/UNED-Charts/documental/uned-mongodb-01.00.00.tgz
+    - https://viborx.github.io/UNED-Charts/documental_cluster/uned-mongodb-01.00.00.tgz
     version: 01.00.00
   uned-redis:
   - apiVersion: v2
-    created: "2022-08-15T13:21:39.9885267+02:00"
+    created: "2023-04-05T23:25:51.7199835+02:00"
     dependencies:
     - name: redis
       repository: https://charts.bitnami.com/bitnami
@@ -33,14 +40,14 @@ entries:
     - name: jupyterhub
       repository: https://jupyterhub.github.io/helm-chart/
       version: 1.2.0
-    digest: cae680cad1adfc55d75046c89f9601f14671f016dbe76aaabc3aa2bd3ae8a027
+    digest: 27f0de6710f58220b75ff945db1e4979791d7e1eb0553fd7a6b3f5c0fed5118d
     name: uned-redis
     urls:
     - https://viborx.github.io/UNED-Charts/clave-valor/uned-redis-02.00.00.tgz
     version: 02.00.00
   uned-redis-cluster:
   - apiVersion: v2
-    created: "2022-08-15T13:21:40.0041178+02:00"
+    created: "2023-04-05T23:25:51.7339808+02:00"
     dependencies:
     - name: redis-cluster
       repository: https://charts.bitnami.com/bitnami
@@ -48,9 +55,9 @@ entries:
     - name: jupyterhub
       repository: https://jupyterhub.github.io/helm-chart/
       version: 1.2.0
-    digest: 29fffac6a9df4b715e2ed4d892ba59dd374feecaa469614dd7328afcc00767e9
+    digest: 41c00f0bede6f15914cfa312bae9757adb3e6a0d4e3201d06dc32fdcbc26c357
     name: uned-redis-cluster
     urls:
     - https://viborx.github.io/UNED-Charts/clave-valor_cluster/uned-redis-cluster-01.00.00.tgz
     version: 01.00.00
-generated: "2022-08-15T13:21:39.9455202+02:00"
+generated: "2023-04-05T23:25:51.6357233+02:00"

@@ -1,0 +1,69 @@
+## Custom Chart  
+## Uso de Mongodb 
+mongodb:
+  image:
+    registry: docker.io
+    repository: viborx/tfg_mongodb
+    tag: 00.00.001
+  resources:
+    limits: 
+      cpu: 1000m
+      memory: 1024Mi
+  auth:
+    enabled: true
+    rootUser: root
+    rootPassword: "UNED"
+    usernames: ["UNED"]
+    passwords: ["UNED"]
+    databases: ["uned"]
+  architecture: replicaset
+  replicaCount: 3
+
+  externalAccess:
+    enabled: true
+    service:
+      type: NodePort
+      nodePorts: 
+       - '32001'
+       - '32002'
+       - '32003'
+  fullnameOverride: mongodb
+  #extraEnvVars:
+  #  - name: ALLOW_EMPTY_PASSWORD
+  #    value: "yes"
+  arbiter:
+    enabled: false
+
+jupyterhub:
+  singleuser:
+    image:
+      name: viborx/tfg_jupyter_mongodb
+      tag: 00.00.001
+    lifecycleHooks:
+      postStart:
+        exec:
+          command:
+            - "sh"
+            - "-c"
+            - >
+              cp -r /tmp/*.json /home/jovyan;
+              cp -r /tmp/*.ipynb /home/jovyan
+    storage:
+      static:
+        pvcName: claim-mongodb
+      dynamic:
+        pvcNameTemplate: claim-mongodb
+  scheduling:
+      userScheduler:
+        enabled: false
+  cull:
+    enabled: false     
+  hub:
+    config:
+      Authenticator:
+        admin_users:
+          - UNED  
+      DummyAuthenticator:
+        password: UNED
+      JupyterHub:
+        authenticator_class: dummy

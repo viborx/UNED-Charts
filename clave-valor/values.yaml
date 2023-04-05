@@ -56,7 +56,8 @@ jupyterhub:
             - "-c"
             - >
               cp -r /tmp/*.csv /home/jovyan;
-              cp -r /tmp/*.txt /home/jovyan;
+              cp -r /tmp/loremipsum.gz /home/jovyan;
+              gzip -d /home/jovyan/loremipsum.gz;
               cp -r /tmp/*.ipynb /home/jovyan
     storage:
       static:

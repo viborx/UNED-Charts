@@ -16,8 +16,7 @@ mongodb:
     usernames: ["UNED"]
     passwords: ["UNED"]
     databases: ["uned"]
-  architecture: replicaset
-  replicaCount: 3
+  architecture: standalone
 
   externalAccess:
     enabled: true
@@ -25,12 +24,10 @@ mongodb:
       type: NodePort
       nodePorts: 
        - '32001'
-       - '32002'
-       - '32003'
   fullnameOverride: mongodb
-  #extraEnvVars:
-  #  - name: ALLOW_EMPTY_PASSWORD
-  #    value: "yes"
+  extraEnvVars:
+    - name: ALLOW_EMPTY_PASSWORD
+      value: "yes"
   arbiter:
     enabled: false
 
@@ -38,7 +35,7 @@ jupyterhub:
   singleuser:
     image:
       name: viborx/tfg_jupyter_mongodb
-      tag: 00.00.001
+      tag: 00.00.002
     lifecycleHooks:
       postStart:
         exec:
