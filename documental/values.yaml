@@ -16,7 +16,10 @@ mongodb:
     usernames: ["UNED"]
     passwords: ["UNED"]
     databases: ["uned"]
+    
   architecture: standalone
+  useStatefulSet: true
+  fullnameOverride: "mongodb"
   
   externalAccess:
     enabled: true
@@ -24,7 +27,6 @@ mongodb:
       type: NodePort
       nodePorts: 
        - '32001'
-  fullnameOverride: mongodb
   extraEnvVars:
     - name: ALLOW_EMPTY_PASSWORD
       value: "yes"
