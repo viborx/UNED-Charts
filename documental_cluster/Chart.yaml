@@ -1,6 +1,6 @@
 # parent/Chart.yaml
 apiVersion: v2
-name: uned-mongodb
+name: uned-mongodb-cluster
 version: 01.00.00
 
 

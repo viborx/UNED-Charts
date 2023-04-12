@@ -4,7 +4,7 @@ mongodb:
   image:
     registry: docker.io
     repository: viborx/tfg_mongodb
-    tag: 00.00.001
+    tag: 00.00.002
   resources:
     limits: 
       cpu: 1000m
@@ -17,7 +17,7 @@ mongodb:
     passwords: ["UNED"]
     databases: ["uned"]
   architecture: standalone
-
+  
   externalAccess:
     enabled: true
     service:

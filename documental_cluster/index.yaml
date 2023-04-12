@@ -25,7 +25,7 @@ entries:
           name: traefik
     apiVersion: v2
     appVersion: 1.5.0
-    created: "2023-04-05T23:25:50.6944651+02:00"
+    created: "2023-04-12T09:38:34.1439584+02:00"
     description: Multi-user Jupyter installation
     digest: 507f71b7a9e88bd3d4f3f3b6dc1700e03c00ce1c9307106a1c58066b25255b89
     home: https://z2jh.jupyter.org
@@ -51,7 +51,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 4.4.13
-    created: "2023-04-05T23:25:50.7044918+02:00"
+    created: "2023-04-12T09:38:34.1643696+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -81,9 +81,9 @@ entries:
     urls:
     - https://viborx.github.io/UNED-Charts/documental_cluster/charts/mongodb-11.1.9.tgz
     version: 11.1.9
-  uned-mongodb:
+  uned-mongodb-cluster:
   - apiVersion: v2
-    created: "2023-04-05T23:25:50.6872705+02:00"
+    created: "2023-04-12T09:38:34.1394082+02:00"
     dependencies:
     - name: mongodb
       repository: https://charts.bitnami.com/bitnami
@@ -91,9 +91,9 @@ entries:
     - name: jupyterhub
       repository: https://jupyterhub.github.io/helm-chart/
       version: 1.2.0
-    digest: 6bbcd8498d31b983b4125bd0748ee6d08e8c1f271bdbcd5c4edab07ac85134a0
-    name: uned-mongodb
+    digest: 4bb430e3a69e30c83acb73adb7c23807ca201a05cd1bccd30150c105f5aa8008
+    name: uned-mongodb-cluster
     urls:
-    - https://viborx.github.io/UNED-Charts/documental_cluster/uned-mongodb-01.00.00.tgz
+    - https://viborx.github.io/UNED-Charts/documental_cluster/uned-mongodb-cluster-01.00.00.tgz
     version: 01.00.00
-generated: "2023-04-05T23:25:50.6650009+02:00"
+generated: "2023-04-12T09:38:33.9787425+02:00"
