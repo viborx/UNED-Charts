@@ -47,7 +47,7 @@ jupyterhub:
       # https://github.com/jupyter/docker-stacks/tree/HEAD/datascience-notebook/Dockerfile
       #registry: docker.io
       name: viborx/tfg_jupyter_redis
-      tag: 01.00.000
+      tag: 01.01.000
     lifecycleHooks:
       postStart:
         exec:
