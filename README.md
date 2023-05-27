@@ -1,2 +1,6 @@
 # UNED-Charts
-Charts de Helm para los módulos de bases de datos no estructuradas del Master de Big Data de la UNED
+Este repositorio de GitHub contiene los Charts de Helm para el TFG (Trabajo de Fin de Grado) de Ingeniería Informática:
+Virtualización Ligera y cloud computing para el despliegue de infraestructuras Big Data para la docencia online de ingeniería.
+
+Realizado por Julio de la Calle
+Dirigido por Agustín C. Caminero Herráez
